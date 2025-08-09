@@ -1,0 +1,26 @@
+@media (max-width: 992px) {
+    .dropdown-magic .dropdown-menu {
+       
+        height: 0;
+        opacity: 0;
+        transition: all 0.3s ease;
+        pointer-events: none;
+        overflow: hidden;
+      }
+    
+    .dropdown-magic.show .dropdown-menu {
+        height: auto;
+        opacity: 1;
+        pointer-events: auto;
+        margin-bottom: 15px;
+      }
+    
+    .nav-item-pusher {
+      transition: transform 0.3s ease;
+    }
+    
+    .dropdown-magic.show ~ .nav-item-pusher {
+        transform: translateY(120px);
+       
+      }
+    }
