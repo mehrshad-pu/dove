@@ -11,3 +11,55 @@
  a:hover {
     text-decoration: none !important;
 }
+.offcanvas-start{
+    width: 200px !important;
+}
+/* استایل بخش سرچ */
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* بیاد سمت راست */
+  }
+  
+  .search-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+  }
+  
+  .search-btn:hover {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-input {
+    width: 0;
+    opacity: 0;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    transition: all 0.4s ease;
+    position: absolute;
+    left: 40px; /* از سمت چپ آیکون باز بشه */
+  }
+  
+  .search-input.active {
+    width: 145px;
+    opacity: 1;
+  }
+  
+  /* موبایل: آیکون بیاد سمت راست کامل */
+  @media (max-width: 992px) {
+    .navbar {
+      display: flex;
+      align-items: center;
+    }
+    .search-container {
+      order: -1; /* آیکون بره اول نوار سمت راست */
+      margin-left: 0;
+    }
+  }
