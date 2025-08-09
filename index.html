@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/3d719f2c81.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="./css/navbar.css">
 </head>
 <body>
     <!-- navbar -->
@@ -19,7 +20,7 @@
         </button>
     
         <!-- لوگو -->
-        <a href="#" class="navbar-brand text-warning ms-3  order-2">
+        <a href="#" class="navbar-brand text-warning ms-3 order-2">
             <i class="fas fa-dove" style="font-size: 25px;"></i>
         </a>
     
@@ -32,7 +33,7 @@
                 <li class="nav-item mx-2">
                     <a href="#" class="nav-link">گالری</a>
                 </li>
-                <li class="nav-item mx-2 dropdown">
+                <li class="nav-item mx-2 dropdown dropdown-magic">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">محصولات</a>
                     <div class="dropdown-menu">
                         <a href="#" class="dropdown-item">مرطوب کننده</a>
@@ -40,22 +41,22 @@
                         <a href="#" class="dropdown-item">پک داو</a>
                     </div>
                 </li>
-                <li class="nav-item mx-2">
+                <li class="nav-item mx-2 nav-item-pusher my-0">
                     <a href="#" class="nav-link">مشتری</a>
                 </li>
             </ul>
         </div>
     
-        <!-- سرچ همیشه بالا -->
+        <!-- سرچ -->
         <div class="search-container ms-auto order-1">
-            <button class="search-btn   " id="searchBtn">
+            <button class="search-btn" id="searchBtn">
                 <i class="fas fa-search"></i>
             </button>
             <input type="text" class="search-input" placeholder="جستجو..." id="searchInput">
         </div>
     </nav>
     
-    <!-- منوی بغل موبایل -->
+    <!-- منوی موبایل -->
     <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="mobileMenu">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title">منو</h5>
@@ -69,7 +70,7 @@
                 <li class="nav-item mx-2">
                     <a href="#" class="nav-link">گالری</a>
                 </li>
-                <li class="nav-item mx-2 dropdown">
+                <li class="nav-item mx-2 dropdown dropdown-magic">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">محصولات</a>
                     <div class="dropdown-menu">
                         <a href="#" class="dropdown-item">مرطوب کننده</a>
@@ -77,7 +78,7 @@
                         <a href="#" class="dropdown-item">پک داو</a>
                     </div>
                 </li>
-                <li class="nav-item mx-2">
+                <li class="nav-item mx-2 nav-item-pusher">
                     <a href="#" class="nav-link">مشتری</a>
                 </li>
             </ul>
@@ -409,6 +410,7 @@
 
     <script src="./script/bootstrap.bundle.min.js"></script>
     <script src="./script/main.js"></script>
+    <script src="./script/navbar.js"></script>
    
 
 </body>
