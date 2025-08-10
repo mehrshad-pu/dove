@@ -24,3 +24,34 @@
        
       }
     }
+    /* استایل شیشه‌ای برای منوی موبایل */
+    .offcanvas {
+      background: rgba(255, 255, 255, 0.15) !important; /* شفافیت */
+      backdrop-filter: blur(10px) !important; /* افکت بلور */
+      -webkit-backdrop-filter: blur(10px) !important; /* برای سازگاری با Safari */
+      border-right: 1px solid rgba(255, 255, 255, 0.2) !important; /* حاشیه نیمه‌شفاف */
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important; /* سایه */
+    }
+
+/* تغییر رنگ متن و آیتم‌ها برای خوانایی بهتر */
+.offcanvas-body .nav-link,
+.offcanvas-body .dropdown-item {
+  color: #fff !important;
+  font-weight: 500;
+}
+
+.offcanvas-body .dropdown-menu {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border: none;
+}
+
+.offcanvas-body .dropdown-item:hover {
+  background: rgba(255, 255, 255, 0.2) !important;
+}.offcanvas {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.1) 100%
+  ) !important;
+  backdrop-filter: blur(15px);
+}
